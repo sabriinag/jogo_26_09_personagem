@@ -3,11 +3,14 @@ import java.util.Random;
 public class JogoV3 {
     public static void main(String[] args) throws Exception {
         var cacador = new Personagem("Silas");
-        var gerador = new Random();
+        var gerador = 1;
+
+        // cacador.cacar();
+        // cacador.exibirEstado();
 
         for( ; ;){ // loop infinito
             //sortear um numero entre 1, 2 e 3
-            int oQueFazer = gerador.nextInt(3) + 1; //[0, 3[
+            int oQueFazer = gerador;//.nextInt(3) + 1; //[0, 3[
 
 
 
@@ -34,7 +37,7 @@ public class JogoV3 {
                 }
                 cacador.exibirEstado();
                 System.out.println("_________________________________");
-                Thread.sleep(1500);
+                Thread.sleep(500);
             }
         
     }
