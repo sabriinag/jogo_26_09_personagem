@@ -2,9 +2,10 @@ public class JogoV2 {
   public static void main(String[] args) throws Exception{
     Personagem p = new Personagem();
     p.nome = "John";
-    p.energia = 10;
-    p.fome = 0;
-    p.sono = 0;
+
+    var soneca = new Personagem(0,3,10);
+    var fominha = new Personagem(1,9,4);
+    
     while(true){
       p.cacar();
       p.comer();
